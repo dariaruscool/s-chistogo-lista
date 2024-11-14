@@ -1,6 +1,6 @@
 @font-face {
     src: url(./../fonts/ebgaramondmedium.woff2) format('woff2'),
-         url(./../fonts/ebgaramondmedium.woff) format('woff');
+         url(./../fonts/ebgaramondmedium.woff) format('woff'),
          url(./../fonts/ebgaramondregular.woff2) format('woff2'),
          url(./../fonts/ebgaramondregular.woff) format('woff');
     font-family: 'EB Garamond';
@@ -8,7 +8,7 @@
 
 @font-face {
     src: url(./../fonts/interregular.woff2) format('woff2'),
-         url(./../fonts/interregular.woff) format('woff');
+         url(./../fonts/interregular.woff) format('woff'),
          url(./../fonts/interbold.woff2) format('woff2'),
          url(./../fonts/interbold.woff) format('woff');
     font-family: 'Inter';

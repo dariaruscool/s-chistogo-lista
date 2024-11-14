@@ -57,20 +57,20 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     list-style: none;
 }
 
-/*Тут вопрос: для чего нужен этот селектор?*/
+/*Тут вопрос: для чего нужен этот селектор?
 .header__menu-item {
 
-}
+}*/
 
 /*Тут вопрос: правильно ли я поняла, что этот селектор нужен только для подчеркивания текста? А нельзя было оформить просто как ссылку*/
 .header__menu-link {
     text-decoration: underline;
 }
 
-/*Тут вопрос: для чего нужен этот селектор?*/
+/*Тут вопрос: для чего нужен этот селектор?
 .header__menu-item_active {
 
-}
+}*/
 
 /*Тут вопрос: не получается убрать у изображения отступ справа и сделать отступ слева (padding не работает). Я так понимаю, что это из-за border-box. Но как это изменить - не понимаю.*/
 
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
-    font-size: 72px;   
+    font-size: 72px;
 }
 
 .accent-span {
@@ -205,10 +205,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     color: #131313;
 }
 
-/*Тут вопрос: для чего нужен этот селектор?*/
+/*Тут вопрос: для чего нужен этот селектор?
 .card_text-only {
     
-}
+}*/
 
 .card__author {
     display: flex;
@@ -226,10 +226,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     font-weight: 700;
 }
 
-/*Тут вопрос: для чего нужен этот селектор?*/
+/*Тут вопрос: для чего нужен этот селектор?
 .card__content {
 
-}
+}*/
 
 .card__title {
     margin-bottom: 8px;
@@ -252,10 +252,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     border-top: 1px solid #FEE42A;
 }
 
-/*Тут вопрос: для чего нужен этот селектор?*/
+/*Тут вопрос: для чего нужен этот селектор?
 .footer__copy {
 
-}
+}*/
 
 .footer__links {
     list-style: none;
