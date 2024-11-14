@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    background-color: #1e1e1e;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+.content-section {
+    box-sizing: border-box;
+    width: 360px;
+    margin: 0 auto 0;
+}
+
+.content-section_theme_dark {
+    background-color: #131313;
+    color: #F5F5F5;
+    }
+
+.content-section_theme_bright {
+    background-color: #fee42a;
+    color: #131313;
+    }
+
+.header {
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Тут вопрос: нужен ли этот селектор? Ведь размер картинки мы задаем в следующем*/
+
+.header-logo {
+    width: 78.45px;
+    height: 15.43px;
+}
+
+.header__logo-image {
+    width: 78.45px;
+    height: 15.43px;
+    }
+
+/*Тут вопрос: почему не сработал gap?*/
+.header__menu {
+    display: flex;
+    width: 75px;
+    height: 84px;
+    gap: 12px;
+    }
+
+.header__menu-list {
+    list-style: none;
+}
+
+/*Тут вопрос: для чего нужен этот селектор?*/
+.header__menu-item {
+
+}
+
+/*Тут вопрос: правильно ли я поняла, что этот селектор нужен только для подчеркивания текста? А нельзя было оформить просто как ссылку*/
+.header__menu-link {
+    text-decoration: underline;
+}
+
+/*Тут вопрос: для чего нужен этот селектор?*/
+.header__menu-item_active {
+
+}
+
+/*Тут вопрос: не получается убрать у изображения отступ справа и сделать отступ слева (padding не работает). Я так понимаю, что это из-за border-box. Но как это изменить - не понимаю.*/
+
+.cover {
+    padding-left: 20px;
+    min-height: 221px;
+    background-image: url(./../images/cover.svg);
+    background-size: 95% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+/*Тут вопрос: почему, если указать размер шрифта из макета (72px) в cover, то он выходит за границы секции? А если указать в cover_title, то все ок*/
+.cover__title {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;   
+}
+
+.accent-span {
+    display: block;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.intro {
+    padding: 0;
+}
+
+.intro__heading {
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.intro__title {
+    font-size: 16px;
+    line-height: 120%;
+    color: #CCCCCC;
+}
+
+.intro__date {
+    font-size: 16px;
+    line-height: 120%;
+    color: #CCCCCC;
+    white-space: nowrap;
+}
+
+.intro__main-text {
+    font-size: 16px;
+    line-height: 135%;
+    color: #CCCCCC;
+    text-align: left;
+    padding: 0 24px 20px 20px;
+}
+
+.reasons {
+    padding: 40px 20px;
+    color: #131313;
+}
+
+.content-section__subtitle {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 115%;
+}
+
+.content-section__introduction {
+    margin: 32px 0;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+/*Тут вопрос: почему мне здесь пришлось отдельно прописать padding-left и он не унаследовался от селектора .reasons?*/
+.content-section__list {
+    font-size: 16px;
+    line-height: 22px;
+    color: #131313;
+    padding-left: 20px;
+}
+
+/*Тут вопрос: я правильно поняла, что этот селектор нужен только для отступов?*/
+.content-section__list-item {
+    margin-bottom: 16px;
+}
+
+.content-section__list-accent {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.how-to {
+    padding: 40px 20px;
+    color: #F5F5F5;
+}
+
+.cards-list {
+    list-style: none;
+}
+
+.card {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 30px;
+}
+
+.card_theme_dark {
+    background-color: #343434;
+    color: #F5F5F5;
+}
+
+.card_theme_bright {
+    background-color: #FEE42A;
+    margin: 32px 0;
+    color: #131313;
+}
+
+/*Тут вопрос: для чего нужен этот селектор?*/
+.card_text-only {
+    
+}
+
+.card__author {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__author-photo {
+    width: 100px;
+    height: 100px;
+}
+
+.card__author-name {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/*Тут вопрос: для чего нужен этот селектор?*/
+.card__content {
+
+}
+
+.card__title {
+    margin-bottom: 8px;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 135%;
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #FEE42A;
+}
+
+/*Тут вопрос: для чего нужен этот селектор?*/
+.footer__copy {
+
+}
+
+.footer__links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
