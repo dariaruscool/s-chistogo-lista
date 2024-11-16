@@ -32,58 +32,32 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     justify-content: space-between;
 }
 
-
-/*Тут вопрос: нужен ли этот селектор? Ведь размер картинки мы задаем в следующем*/
-
-.header-logo {
-    width: 78.45px;
-    height: 15.43px;
-}
-
 .header__logo-image {
     width: 78.45px;
     height: 15.43px;
-    }
-
-/*Тут вопрос: почему не сработал gap?*/
-.header__menu {
-    display: flex;
-    width: 75px;
-    height: 84px;
-    gap: 12px;
-    }
+}
 
 .header__menu-list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-/*Тут вопрос: для чего нужен этот селектор?
-.header__menu-item {
-
-}*/
-
-/*Тут вопрос: правильно ли я поняла, что этот селектор нужен только для подчеркивания текста? А нельзя было оформить просто как ссылку*/
 .header__menu-link {
     text-decoration: underline;
 }
 
-/*Тут вопрос: для чего нужен этот селектор?
-.header__menu-item_active {
-
-}*/
-
-/*Тут вопрос: не получается убрать у изображения отступ справа и сделать отступ слева (padding не работает). Я так понимаю, что это из-за border-box. Но как это изменить - не понимаю.*/
-
 .cover {
-    padding-left: 20px;
+    padding: 0 0 0 20px;
     min-height: 221px;
     background-image: url(./../images/cover.svg);
     background-size: 95% auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     
 }
-/*Тут вопрос: почему, если указать размер шрифта из макета (72px) в cover, то он выходит за границы секции? А если указать в cover_title, то все ок*/
+
 .cover__title {
     font-family: 'EB Garamond';
     font-style: normal;
@@ -158,7 +132,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     line-height: 27px;
 }
 
-/*Тут вопрос: почему мне здесь пришлось отдельно прописать padding-left и он не унаследовался от селектора .reasons?*/
 .content-section__list {
     font-size: 16px;
     line-height: 22px;
@@ -166,7 +139,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     padding-left: 20px;
 }
 
-/*Тут вопрос: я правильно поняла, что этот селектор нужен только для отступов?*/
 .content-section__list-item {
     margin-bottom: 16px;
 }
@@ -205,11 +177,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     color: #131313;
 }
 
-/*Тут вопрос: для чего нужен этот селектор?
-.card_text-only {
-    
-}*/
-
 .card__author {
     display: flex;
     flex-direction: column;
@@ -225,11 +192,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     margin-bottom: 8px;
     font-weight: 700;
 }
-
-/*Тут вопрос: для чего нужен этот селектор?
-.card__content {
-
-}*/
 
 .card__title {
     margin-bottom: 8px;
@@ -251,11 +213,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     justify-content: space-between;
     border-top: 1px solid #FEE42A;
 }
-
-/*Тут вопрос: для чего нужен этот селектор?
-.footer__copy {
-
-}*/
 
 .footer__links {
     list-style: none;
